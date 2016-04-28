@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>register</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+	    <link rel="stylesheet" href="css/extends.css" type="text/css"/>
+	    <link rel="stylesheet" href="css/common.css" type="text/css"/>
+	    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+	</head>
+	<body>
+		<!--top bar-->
+		<div class="top-bar">
+		    <div class="main-container clearfix relative">
+				<div class="pull-left tb-block tb-block-left">
+					<a href="#">联系我们</a>
+					<a href="javascript:;" class="js-dropdown-top-qrcode">关注我们&nbsp;<span class="caret"></span> </a>
+					<div class="top-bar-qrcode-alert animated fadeInDown">
+						<img src="img/qrcode_demo.png" class="qrcode-img"/>
+					</div>
+					<a href="#">收藏网站</a>
+				</div>
+		        <div class="pull-right tb-block tb-block-right">
+		            <a href="#" class="signin-account notice">欢迎您！Icey</a><a href="#" class="btn-signout">退出</a>
+		        </div>
+		    </div>
+		</div>
+		<!--top bar end-->
+		<!--top nav-->
+		<div class="top-nav">
+		    <div class="main-container clearfix">
+		        <div class="logo pull-left"></div>
+		        <div class="top-nav-list pull-left">
+		            <ul class="clearfix">
+		                <li><a href="#">项目介绍</a></li>
+		                <li><a href="#">关于公司</a></li>
+		                <li><a href="#">项目申请</a></li>
+		                <li><a href="#">案例展示</a></li>
+		            </ul>
+		            <span class="top-nav-bb"></span>
+		        </div>
+		    </div>
+		</div>
+		<!--top nav end-->
+		<!--登录窗口-->
+		<div class="reg-background">
+			<div class="reg-box">
+				<div class="reg-container">
+					<div class="clearfix">
+						<h1 class="fs30 b pull-left">注 册</h1>
+						<h6 class="pull-left fs16 text-777 droidSerif mt15 ml10">registered</h6>
+						<div class="mt15 pull-right">
+							<a href="javascript:;" class="text-dark-grey reg-link fs14">登录 &gt;&gt;</a>
+						</div>
+					</div>
+					<div class="mt20">
+						<form>
+							<!--错误信息提示，error-info中的visibility:visible显示，visibility:hidden隐藏-->
+							<div class="text-danger error-info js-error-info">
+								<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> 用户名不存在！
+							</div>
+							<!--校验内容有错误时，给错误的输入框js-input-box后加上input-box-error，将边框变成红色-->
+							<div class="mt10 clearfix">
+								<label class="label-content pull-left text-right fs14 text-default">
+									<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>帐 号：</div>
+								</label>
+								<div class="input-box-lg input-box-error js-input-box">
+									<span class="glyphicon glyphicon-user icon-input fs16 text-gray" aria-hidden="true"></span>
+									<div class="input-border-left"></div>
+									<input type="text" class="fs14 text-default" placeholder="请输入电子邮箱或手机号" />
+								</div>
+							</div>
+							<div class="mt20 clearfix">
+								<label class="label-content pull-left text-right fs14 text-default">
+									<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>密 码：</div>
+								</label>
+								<div class="input-box-lg js-input-box">
+									<span class="glyphicon glyphicon-lock icon-input fs16 text-gray" aria-hidden="true"></span>
+									<div class="input-border-left"></div>
+									<input type="password" class="fs14 text-default" placeholder="密码" />
+								</div>
+							</div>
+							<div class="mt20 clearfix">
+								<label class="label-content pull-left text-right fs14 text-default">
+									<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>确认密码：</div>
+								</label>
+								<div class="input-box-lg js-input-box">
+									<span class="glyphicon glyphicon-lock icon-input fs16 text-gray" aria-hidden="true"></span>
+									<div class="input-border-left"></div>
+									<input type="password" class="fs14 text-default" placeholder="再次确认密码" />
+								</div>
+							</div>
+							<div class="mt20 clearfix">
+								<label class="label-content pull-left text-right fs14 text-default">
+									<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>验证码：</div>
+								</label>
+								<div class="input-box-sm js-input-box pull-left">
+									<i class="i-inlineBlock icon-verify icon-input"></i>
+									<div class="input-border-left"></div>
+									<input type="text" class="fs14 text-default" placeholder="验证码" />
+								</div>
+								<a href="javascript:;"><img src="img/verification--code.png" class="pull-right input-box-verification-pic" width="135" height="60" /></a>
+							</div>								
+						</form>	
+					</div>
+				</div>
+				<div class="input-box-dashed-line"></div>
+				<div class="reg-container pt30">
+					<div class="text-center">
+						<input type="radio" name="inlineRadioOptions" class="nc-check-radio" id="inlineRadio1" value="option1"><span class="nc-label-text">个人</span>
+						<input type="radio" name="inlineRadioOptions" class="nc-check-radio" id="inlineRadio2" value="option2"><span class="nc-label-text">企业</span>
+						<input type="radio" name="inlineRadioOptions" class="nc-check-radio" id="inlineRadio3" value="option3"><span class="nc-label-text">组织或机构</span>
+					</div>
+					<div class="mt10 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>姓 名：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-user icon-input fs18 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="姓名" />
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>手机号：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-earphone icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="手机号" />
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>座机号：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-phone-alt icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="座机号" />
+						</div>
+					</div>
+					<div class="mt10 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>邮 箱：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-envelope icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="邮箱" />
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>微 信：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<i class="i-inlineBlock reg-weixin"></i>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="微信" />
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>单位名称：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<i class="i-inlineBlock reg-company"></i>
+							<div class="input-border-left"></div>
+							<input type="text" class="fs14 text-default" placeholder="单位名称" />
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">公司主页：</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-home icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<select class="fs14 text-default">
+								<option>公司主页</option>
+								<option>公司主页1</option>
+								<option>公司主页2</option>
+								<option>公司主页3</option>
+							</select>
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<label class="label-content pull-left text-right fs14 text-default">
+							<div class="input-box-label"><span class="text-right text-danger input-box-label-asterisk">* </span>联系地址：</div>
+						</label>
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-map-marker icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<select class="fs14 text-default">
+								<option>省份</option>
+								<option>省份1</option>
+								<option>省份2</option>
+								<option>省份3</option>
+							</select>
+						</div>
+					</div>
+					<div class="mt20 clearfix">
+						<div class="input-box-lg js-input-box">
+							<span class="glyphicon glyphicon-map-marker icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<select class="fs14 text-default">
+								<option>城市</option>
+								<option>城市1</option>
+								<option>城市2</option>
+								<option>城市3</option>
+							</select>
+						</div>
+					</div>
+					<div class="mt20 clearfix">	
+						<div class="input-box-lg-textarea js-input-box">
+							<span class="glyphicon glyphicon-map-marker icon-input fs16 text-gray" aria-hidden="true"></span>
+							<div class="input-border-left"></div>
+							<textarea class="fs14 text-default" placeholder="详细地址"></textarea>
+						</div>
+					</div>
+					<div class="mt30 clearfix text-dark-grey ml85">
+					    <input type="checkbox" class="nice-chosen-checkbox"/> <span class="nc-label-text fs14 text-dark-grey"> 我已阅读同意《用户注册协议》</span>
+					</div>
+					<div class="mt30 ml85">
+						<a href="javascript:;" class="btn-register"></a>
+					</div>
+					<div class="divi-border mt30"></div>
+					
+					<!--底部合作信息-->
+					<div class="footer-title-line">
+						<div class="footer-title fs14 text-dark-grey">
+							合作帐号注册
+						</div>
+					</div>
+					<div class="mt15 text-center">
+						<a href="javascript:;" class="icon-footer-logo icon-qq"></a>
+						<a href="javascript:;" class="icon-footer-logo icon-weibo ml10"></a>
+						<a href="javascript:;" class="icon-footer-logo icon-weixin ml10"></a>
+					</div>
+					<!--底部合作信息 end-->
+				</div>
+			</div>
+		</div>
+		<!--登录窗口 end-->
+		<!--网站地图-->
+		<div class="site-map">
+		    <div class="main-container pt50 pb50 text-center">
+		        <h2 class="sitemap-title">Sitemap</h2>
+		        <div class="site-map-links">
+		            <a href="#">首页</a><a href="#">项目介绍</a><a href="#">关于公司</a><a href="#">项目申请</a><a href="#">案例展示</a><a href="#">联系我们</a>
+		        </div>
+		        <div class="site-map-qrcode">
+		            <img src="img/qrcode_demo.png" class="qrcode-img"/>
+		        </div>
+		    </div>
+		</div>
+		<!--网站地图end-->
+		<!--底部权限信息以及分享-->
+		<div class="footer">
+			<div class="main-container clearfix">
+				<div class="pull-left">© Copyright 2016 Etekcity co. Ltd    京ICP证070359号</div>
+				<div class="footer-share-group pull-left">
+					<a href="#" class="footer-share-link qq"></a>
+					<a href="#" class="footer-share-link sina"></a>
+					<a href="#" class="footer-share-link weixin"></a>
+				</div>
+			</div>
+		</div>
+		<!--底部权限信息以及分享end-->
+		<!--在线咨询的直达按钮-->
+		<button type="button" class="btn-online-service"></button>
+		<!--返回顶部-->
+		<button type="button" class="btn-backtop js-backtop"></button>
+		<!--返回顶部end-->
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+		<script type="text/javascript" src="js/jquery.niceCheck.js" ></script>
+		<script>
+			$(".nc-check-radio").niceCheck({
+	            type:"radio",
+	            idSuffix:"dasdassd",
+				hasText:true,
+				textStyle:{
+	                fontSize:"14px"
+	            }
+	        });
+	        $(".nice-chosen-checkbox").niceCheck({
+	            type:"checkbox",
+	            idSuffix:"aaaa",
+				hasText:true,
+				textStyle:{
+	                fontSize:"14px"
+	            }
+	        });
+		</script>
+	</body>
+</html>
